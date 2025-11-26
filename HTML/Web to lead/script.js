@@ -1,4 +1,11 @@
-function beforesubmit() {
+let captchaCheck = false;
+function beforesubmit(event) {
+
+    if(!captchaCheck){
+        alert("Please check the recaptcha box to submit the lead");
+        event.preventDefault();
+    }
+
   let outputdate = document.querySelector(".outputdate");
   let inputdate = document.querySelector(".inputdate");
 
@@ -20,3 +27,7 @@ function timestamp() {
   }
 }
 setInterval(timestamp, 500);
+
+function captchasuccess(){
+    captchaCheck = true;
+}
