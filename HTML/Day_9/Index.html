@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="script.js"></script>
+<body>
+    <button onclick = clickme()>Click me</button>
+    <div class = "hover" 
+        onmouseover = "mousehoverhandler()"
+        style = "background-color: aqua; margin-top: 1rem;"
+        onmouseout = "mouseouthandler()"
+        >
+        TEST DIV
+    </div>
+
+    <div style = "margin-top: 1rem;">
+        <label>Enter Number</label>
+        <input onchange = "handlechange(event)" type = "number" name = "Event name"/>
+    </div>
+
+</body>
+</html>
