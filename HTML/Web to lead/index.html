@@ -6,6 +6,7 @@
     <title>Web To Lead Form</title>
     <link rel = "stylesheet" href="style.css"/>
     <script src = "script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
 <h1>Create Lead</h1>
@@ -14,6 +15,7 @@
 <input type=hidden name="oid" value="00DgK0000029EaU">
 <input type=hidden name="retURL" value="https://bluegen-dev.github.io/LWC-BootCamp/HTML/Web%20to%20lead/thanks.html">
 <input type=hidden name="Lead_Date__c" class="outputdate">
+<input type=hidden name='captcha_settings' value='{"keyname":"GoogleRecaptcha","fallback":"true","orgId":"00DgK0000029EaU","ts":""}'>
 
 <label for="first_name">First Name</label><input required = "true" id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
 
@@ -25,6 +27,7 @@
 
 <label for="email">Lead Date</label>
 <input required = "true" type = "date" class ="inputdate"/>
+<div class="g-recaptcha" data-sitekey="6LfNwhgsAAAAAC2VMGTg4XDj15BuZfppaPSDe3mN"></div><br>
 <input type="submit" name="submit" class="submit">
 
 </form>
